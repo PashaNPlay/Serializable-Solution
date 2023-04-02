@@ -37,7 +37,7 @@ public class Solution implements Serializable{
         this.temperature = temperature;
 
         string = "Today is %s, and the current temperature is %s C";
-        SimpleDateFormat format = new SimpleDateFormat(pattern);
+        SimpleDateFormat format = new SimpleDateFormat(pattern, Locale.ENGLISH);
         this.string = String.format(string, format.format(currentDate), temperature);
     }
 
